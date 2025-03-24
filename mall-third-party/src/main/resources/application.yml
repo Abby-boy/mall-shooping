@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    alicloud:
+      access-key: ${ALIBABA_ACCESS_KEY_ID}
+      secret-key: ${ALIBABA_ACCESS_KEY_SECRET}
+      oss:
+        endpoint: oss-cn-beijing.aliyuncs.com
+        bucket: dingjiajia-mall
+
+
+  application:
+    name: mall-third-party
+
+server:
+  port: 30000
