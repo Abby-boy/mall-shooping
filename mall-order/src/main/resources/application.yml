@@ -1,0 +1,16 @@
+server:
+  port: 9000
+
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.2.44:3306/mall_oms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  #  扫描依赖的jar包下的所有mapper.xml
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
