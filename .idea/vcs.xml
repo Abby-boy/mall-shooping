@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mall-coupon" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mall-gateway" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mall-member" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mall-order" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mall-product" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mall-third-party" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mall-ware" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/renren-fast-vue" vcs="Git" />
+  </component>
+</project>
