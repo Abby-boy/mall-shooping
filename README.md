@@ -1,4 +1,6 @@
-<div style="text-align:center">商城系统的开发</div>
+<div style="text-align:center; color: red; font-weight: bold;">
+    商城系统的开发
+</div>
 
   由于Centos7大部分停止维护下架问题，本次我才用WSL2+Ubuntu20.04.6LTS，同理在Ubuntu下安装Docker管理mysql5.7和redis。
 
