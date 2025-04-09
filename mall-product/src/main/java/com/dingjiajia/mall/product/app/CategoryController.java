@@ -1,19 +1,16 @@
-package com.dingjiajia.mall.product.controller;
+package com.dingjiajia.mall.product.app;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.dingjiajia.mall.product.entity.CategoryEntity;
 import com.dingjiajia.mall.product.service.CategoryService;
-import com.dingjiajia.common.utils.PageUtils;
 import com.dingjiajia.common.utils.R;
 
 

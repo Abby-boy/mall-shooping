@@ -1,4 +1,4 @@
-package com.dingjiajia.mall.product.controller;
+package com.dingjiajia.mall.product.app;
 
 import java.util.Arrays;
 import java.util.List;

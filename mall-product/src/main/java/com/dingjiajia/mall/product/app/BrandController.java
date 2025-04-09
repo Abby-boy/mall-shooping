@@ -1,4 +1,4 @@
-package com.dingjiajia.mall.product.controller;
+package com.dingjiajia.mall.product.app;
 
 import java.util.Arrays;
 import java.util.Map;
@@ -7,7 +7,6 @@ import com.dingjiajia.common.valid.AddGroup;
 import com.dingjiajia.common.valid.UpdateGroup;
 import com.dingjiajia.common.valid.UpdateStatusGroup;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,8 +18,6 @@ import com.dingjiajia.mall.product.entity.BrandEntity;
 import com.dingjiajia.mall.product.service.BrandService;
 import com.dingjiajia.common.utils.PageUtils;
 import com.dingjiajia.common.utils.R;
-
-import javax.validation.Valid;
 
 
 /**
