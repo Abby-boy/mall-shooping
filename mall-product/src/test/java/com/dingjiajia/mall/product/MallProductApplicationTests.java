@@ -7,11 +7,15 @@ import com.dingjiajia.mall.product.service.BrandService;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.redisson.Redisson;
+import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.test.context.junit4.SpringRunner;
 
-
+import java.util.UUID;
 
 
 @RunWith(SpringRunner.class)
@@ -20,6 +24,28 @@ public class MallProductApplicationTests {
 
     @Autowired
     BrandService brandService;
+
+    @Autowired
+    StringRedisTemplate stringRedisTemplate;
+
+    @Autowired
+    RedissonClient redissonClient;
+
+    @Test
+    public void test2(){
+        System.out.println(redissonClient);
+    }
+
+
+    @Test
+    public void redisTest(){
+        ValueOperations<String, String> ops = stringRedisTemplate.opsForValue();
+        // 保存数据
+        ops.set("hello","world-"+ UUID.randomUUID().toString());
+        // 查询数据
+        String hello = ops.get("hello");
+        System.out.println("redis里保存的数据："+hello);
+    }
 
 
     @Test

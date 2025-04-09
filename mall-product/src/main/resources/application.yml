@@ -10,6 +10,12 @@ spring:
         server-addr: 127.0.0.1:8848
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
+  thymeleaf:
+    cache: false
+  redis:
+    host: 192.168.2.44
+    port: 6379
+
 
 mybatis-plus:
   #  扫描依赖的jar包下的所有mapper.xml
@@ -26,6 +32,7 @@ server:
 logging:
   level:
     com.dingjiajia.mall: debug
+
 
 
 

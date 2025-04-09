@@ -3,6 +3,7 @@ package com.dingjiajia.mall.product;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
@@ -61,7 +62,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  *      SpringBoot，访问项目的时候，默认会找index
  *  4）、页面修改不重启服务器实时更新
  *      1）、引入dev-tools
- *      2)、修改完页面 controller shift f9重新自动编译下页面，代码配置，推荐重启
+ *      2)、修改完页面 app shift f9重新自动编译下页面，代码配置，推荐重启
  *
  * 6、整合redis
  *  1）、引入data-redis-starter
@@ -108,6 +109,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  */
 
 
+@EnableCaching
 @EnableFeignClients(basePackages = "com.dingjiajia.mall.product.feign")        //
 @EnableDiscoveryClient
 @MapperScan("com.dingjiajia.mall.product.dao")
