@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mall-auth-server" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/mall-coupon" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/mall-gateway" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/mall-member" vcs="Git" />
